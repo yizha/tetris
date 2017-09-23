@@ -8,26 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		FE01B20D1F772321004737D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE01B20C1F772321004737D5 /* AppDelegate.swift */; };
-		FE01B20F1F772321004737D5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FE01B20E1F772321004737D5 /* GameScene.sks */; };
-		FE01B2111F772321004737D5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FE01B2101F772321004737D5 /* Actions.sks */; };
 		FE01B2131F772321004737D5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE01B2121F772321004737D5 /* GameScene.swift */; };
 		FE01B2151F772321004737D5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE01B2141F772321004737D5 /* GameViewController.swift */; };
 		FE01B2181F772321004737D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE01B2161F772321004737D5 /* Main.storyboard */; };
 		FE01B21A1F772321004737D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE01B2191F772321004737D5 /* Assets.xcassets */; };
 		FE01B21D1F772321004737D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE01B21B1F772321004737D5 /* LaunchScreen.storyboard */; };
+		FE01B2251F77247F004737D5 /* Conf.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE01B2241F77247F004737D5 /* Conf.swift */; };
+		FE01B2271F77249A004737D5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE01B2261F77249A004737D5 /* Game.swift */; };
+		FE01B22D1F772556004737D5 /* clear.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE01B2281F772556004737D5 /* clear.wav */; };
+		FE01B22E1F772556004737D5 /* land.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE01B2291F772556004737D5 /* land.wav */; };
+		FE01B22F1F772556004737D5 /* move.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE01B22A1F772556004737D5 /* move.wav */; };
+		FE01B2301F772556004737D5 /* over.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE01B22B1F772556004737D5 /* over.wav */; };
+		FE01B2311F772556004737D5 /* rotate.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE01B22C1F772556004737D5 /* rotate.wav */; };
+		FE01B2341F7725AE004737D5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE01B2331F7725AE004737D5 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE01B2091F772321004737D5 /* Tetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE01B20C1F772321004737D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE01B20E1F772321004737D5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		FE01B2101F772321004737D5 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		FE01B2121F772321004737D5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		FE01B2141F772321004737D5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FE01B2171F772321004737D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE01B2191F772321004737D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE01B21C1F772321004737D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE01B21E1F772321004737D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE01B2241F77247F004737D5 /* Conf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conf.swift; sourceTree = "<group>"; };
+		FE01B2261F77249A004737D5 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		FE01B2281F772556004737D5 /* clear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clear.wav; sourceTree = "<group>"; };
+		FE01B2291F772556004737D5 /* land.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = land.wav; sourceTree = "<group>"; };
+		FE01B22A1F772556004737D5 /* move.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = move.wav; sourceTree = "<group>"; };
+		FE01B22B1F772556004737D5 /* over.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = over.wav; sourceTree = "<group>"; };
+		FE01B22C1F772556004737D5 /* rotate.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rotate.wav; sourceTree = "<group>"; };
+		FE01B2331F7725AE004737D5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +72,31 @@
 		FE01B20B1F772321004737D5 /* Tetris */ = {
 			isa = PBXGroup;
 			children = (
+				FE01B2321F77259B004737D5 /* Extensions */,
 				FE01B20C1F772321004737D5 /* AppDelegate.swift */,
-				FE01B20E1F772321004737D5 /* GameScene.sks */,
-				FE01B2101F772321004737D5 /* Actions.sks */,
 				FE01B2121F772321004737D5 /* GameScene.swift */,
 				FE01B2141F772321004737D5 /* GameViewController.swift */,
 				FE01B2161F772321004737D5 /* Main.storyboard */,
 				FE01B2191F772321004737D5 /* Assets.xcassets */,
 				FE01B21B1F772321004737D5 /* LaunchScreen.storyboard */,
 				FE01B21E1F772321004737D5 /* Info.plist */,
+				FE01B2241F77247F004737D5 /* Conf.swift */,
+				FE01B2261F77249A004737D5 /* Game.swift */,
+				FE01B2281F772556004737D5 /* clear.wav */,
+				FE01B2291F772556004737D5 /* land.wav */,
+				FE01B22A1F772556004737D5 /* move.wav */,
+				FE01B22B1F772556004737D5 /* over.wav */,
+				FE01B22C1F772556004737D5 /* rotate.wav */,
 			);
 			path = Tetris;
+			sourceTree = "<group>";
+		};
+		FE01B2321F77259B004737D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FE01B2331F7725AE004737D5 /* UIColor.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,11 +159,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE01B22E1F772556004737D5 /* land.wav in Resources */,
+				FE01B2301F772556004737D5 /* over.wav in Resources */,
+				FE01B22D1F772556004737D5 /* clear.wav in Resources */,
 				FE01B2181F772321004737D5 /* Main.storyboard in Resources */,
-				FE01B20F1F772321004737D5 /* GameScene.sks in Resources */,
+				FE01B22F1F772556004737D5 /* move.wav in Resources */,
+				FE01B2311F772556004737D5 /* rotate.wav in Resources */,
 				FE01B21A1F772321004737D5 /* Assets.xcassets in Resources */,
 				FE01B21D1F772321004737D5 /* LaunchScreen.storyboard in Resources */,
-				FE01B2111F772321004737D5 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE01B2131F772321004737D5 /* GameScene.swift in Sources */,
+				FE01B2341F7725AE004737D5 /* UIColor.swift in Sources */,
+				FE01B2271F77249A004737D5 /* Game.swift in Sources */,
 				FE01B2151F772321004737D5 /* GameViewController.swift in Sources */,
 				FE01B20D1F772321004737D5 /* AppDelegate.swift in Sources */,
+				FE01B2251F77247F004737D5 /* Conf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
