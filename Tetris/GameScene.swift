@@ -33,7 +33,7 @@ class GameScene: SKScene {
         if loadSndEffects && soundEffectActions == nil {
             soundEffectActions = [
                 "move":   SKAction.playSoundFileNamed("move.wav",   waitForCompletion: false),
-                "land":   SKAction.playSoundFileNamed("land.wav",   waitForCompletion: false),
+                "land":   SKAction.playSoundFileNamed("land.wav",   waitForCompletion: true),
                 "rotate": SKAction.playSoundFileNamed("rotate.wav", waitForCompletion: false),
                 "clear":  SKAction.playSoundFileNamed("clear.wav",  waitForCompletion: false),
                 "over":   SKAction.playSoundFileNamed("over.wav",   waitForCompletion: false)

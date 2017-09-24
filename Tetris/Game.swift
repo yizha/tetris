@@ -478,6 +478,8 @@ class MessagePanel: SKSpriteNode {
 
 class GameData {
 
+    var loaded = false
+
     let maxSpeed = 6
 
     var clears = 0
@@ -580,7 +582,7 @@ class BattleField: SKNode {
     }
 
     func setupActions(scene: GameScene, patch: BlockPatch, resetPlayAreaAction: SKAction) {
-        let repeatActionInterval = 0.1
+        let repeatActionInterval = 0.07
         let installRepeatActionInterval = 0.3
         let moveSoundEffectAction = SKAction.run {
             if self.piece != nil { scene.playSoundEffect("move") }
