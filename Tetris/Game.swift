@@ -1007,8 +1007,9 @@ class ControlArea: SKNode {
                playAreaWidth: CGFloat,
                rect: CGRect) {
         let leftRightWidth  = playAreaWidth / 2
-        let rotateWidth = rect.size.width - playAreaWidth
         let height = rect.height
+        let downWidth = rect.size.width - playAreaWidth
+        let downHeight = height
         let size = CGSize(width: leftRightWidth, height: height)
 
         let arrowWidth = leftRightWidth * 0.5
@@ -1039,22 +1040,8 @@ class ControlArea: SKNode {
         right.deactive = { gameScene.movePieceRight(false) }
         self.right = right
 
-        // rotate button
-        let rotateSize = arrowHeight
-        path = rotatePath(radius: rotateSize / 2)
-        let rotatePosition = CGPoint(x: (rotateWidth - rotateSize) / 2, y: (height - rotateSize) / 2)
-        shape = shapeNode(path: path, position: rotatePosition)
-        let rotate = GameButton(size: CGSize(width: rotateWidth, height: height), shape: shape)
-        rotate.position = CGPoint(x: playAreaWidth, y: 0)
-        rotate.active = { gameScene.rotatePiece() }
-        self.rotate = rotate
-
-
-
         // move down button
-        let downWidth = rotateWidth
-        let downHeight = downWidth
-        let downSize = CGSize(width: downWidth, height: downHeight)
+        let downSize = CGSize(width: downWidth, height: height)
         let downArrowWidth = arrowHeight
         let downArrowHeight = arrowWidth
         path = downArrowPath(size: CGSize(width: downArrowWidth, height: downArrowHeight))
@@ -1062,10 +1049,23 @@ class ControlArea: SKNode {
                           position: CGPoint(x: (downWidth - downArrowWidth) / 2,
                                             y: (downHeight - downArrowHeight) / 2))
         let down = GameButton(size: downSize, shape: shape)
-        down.position = CGPoint(x: playAreaWidth, y: rotate.frame.height)
+        down.position = CGPoint(x: playAreaWidth, y: 0)
         down.active = { gameScene.movePieceDown(true) }
         down.deactive = moveDownOrDrop
         self.down = down
+
+        // rotate button
+        let rotateSize = arrowHeight
+        let rotateWidth = downWidth
+        let rotateHeight = downWidth
+        path = rotatePath(radius: rotateSize / 2)
+        let rotatePosition = CGPoint(x: (rotateWidth - rotateSize) / 2, y: (rotateHeight - rotateSize) / 2)
+        shape = shapeNode(path: path, position: rotatePosition)
+        let rotate = GameButton(size: CGSize(width: rotateWidth, height: rotateHeight), shape: shape)
+        rotate.position = CGPoint(x: playAreaWidth, y: down.frame.height)
+        rotate.active = { gameScene.rotatePiece() }
+        self.rotate = rotate
+
 
 
         self.addChild(left)
