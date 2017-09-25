@@ -100,30 +100,30 @@ class GameScene: SKScene {
     func playAreaTouched() {
         switch self.state {
         case .idle:
-            self.state = .running
             self.newGame()
         case .running:
-            self.state = .paused
             self.pauseGame()
         case .paused:
-            self.state = .running
             self.unpauseGame()
         }
     }
 
     func unpauseGame() {
+        self.state = .running
         self.ctrlArea.enable()
         self.playArea.unpause()
         self.infoArea.unpause()
     }
 
     func pauseGame() {
+        self.state = .paused
         self.ctrlArea.disable()
         self.playArea.pause()
         self.infoArea.pause()
     }
 
     func newGame() {
+        self.state = .running
         self.ctrlArea.enable()
         self.playArea.newGame()
         self.infoArea.newGame()

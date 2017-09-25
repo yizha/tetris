@@ -512,10 +512,10 @@ class GameData {
     }
 
     func reset() {
-        speed = 1
-        clears = 0
-        rowClearScore = 0
-        score = 0
+        //speed = 1
+        //clears = 0
+        //rowClearScore = 0
+        //score = 0
     }
 
     func clearOneRow() -> Bool {
@@ -525,7 +525,7 @@ class GameData {
         score += rowClearScore
         if score > topScore { topScore = score }
         if speed == maxSpeed { return false }
-        if let newSpeed = clearsSpeedMap[clears] {
+        if let newSpeed = clearsSpeedMap[clears], newSpeed > speed {
             speed = newSpeed
             return true
         } else {
