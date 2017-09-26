@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import AVFoundation
 import os.log
 
 @UIApplicationMain
@@ -19,6 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //os_log("application")
+        //AVAudioSession.sharedInstance().setCategory(
+        //AVAudioSession.sharedInstance().setActive(true, error: nil)
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient, with: .mixWithOthers)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            os_log("failed to initialize audio session, error: %s", type: .debug, (error as NSError).code)
+        }
         return true
     }
 
